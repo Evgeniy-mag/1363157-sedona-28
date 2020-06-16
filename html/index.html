@@ -8,7 +8,7 @@
       <header>
          <nav>
             <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="логотип"/>
+            <img src="img\logo.svg" alt="логотип"/>
             </a>
             <ul>
                <li><a href="">Информация</a></li>
@@ -30,14 +30,14 @@
       </main>
       <footer>
          <section>
-            <h2> Контакты </h2>
+            <h2 class="visually-hidden"> Контакты </h2>
             <p>
                #Visitsedona<br>
                тел:+7(945)666-01-66
             </p>
          </section>
          <section>
-            <h2> Социальные сети </h2>
+            <h2 class="visually-hidden"> Социальные сети </h2>
             <ul>
                <li>
                   <a href="#">Твитер</a>
@@ -59,13 +59,29 @@
       </footer>
       <section>
          <h2> Поиск гостиницы в Седоне</h2>
-         <figure>
-            <p>Дата заезда:</p>
-            <p>Дата выезда:</p>
-            <p>Взрослые:</p>
-            <p>Дети:</p>
-         </figure>
-         <button type="button">Найти</button>
+         <Form action="https://echo.htmlacademy.ru" method="get">
+            <div>
+               <label for="data_arrival">Дата заезда:</label>
+               <input id="data_arrival" type="data" name="arrival" placeholder="24 апреля 2017" required>
+            </div>
+            <br>
+            <div>
+               <label for="data_departure">Дата выезда:</label>
+               <input id="date_departure" type="data" name="departure" placeholder="4 июля 2017" required>
+            </div>
+            <br>
+            <div>
+               <laber for="number_adults">Взрослые:</laber>
+               <input id="number_adults" type="range" min="1"max="10" step="1" name="adults">
+            </div>
+            <br>
+            <div>
+               <laber for="number_children">Дети:</laber>
+               <input id="number_children" type="range" min="1"max="10" step="1" name="children">
+            </div>
+            <br>
+            <button type="submit">Найти</button>
+         </form>
       </section>
    </body>
 </html>
