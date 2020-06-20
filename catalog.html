@@ -2,12 +2,18 @@
 <html lang="ru">
    <head>
       <meta charset="UTF-8">
-      <title> CEDONA-hotel</title>
+      <title>HTML Academy: Седона</title>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <link href="normalize.css" rel="stylesheet">
+      <link href="style.css" rel="stylesheet">
    </head>
    <body>
       <header>
-         <nav>
-            <ul>
+         <nav class="navigation">
+            <a href="">
+            <img src="img\logo.svg" alt="логотип"/>
+            </a>
+            <ul class="site_navigation">
                <li><a href="">Информация</a></li>
                <li><a href=""> Фото и Видео</a></li>
                <li><a href="">Карта штата</a></li>
@@ -17,62 +23,67 @@
       </header>
       <main>
          <section>
-            <h2>Amara resort & spa</h2>
+            <h2 class="name_hotel">Amara resort & spa</h2>
             <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="картинка гостиницы №1"/>
+            <img src="img/Layer_1.jpg" alt="картинка гостиницы №1"/>
             </a>
             <p> гостиница от 4000р</p>
-            <button type="button">подробнее</button>
-            <button type="button">забронировать</button>
-            <p>рейтинг: 8.5</p>
+            <button class="button" type="button">подробнее</button>
+            <button class="button_1" type="button">забронировать</button>
+            <p class="rating">рейтинг: 8.5</p>
          </section>
          <section>
-            <h2>Desert quail inn</h2>
+            <h2 class="name_hotel">Desert quail inn</h2>
             <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="картинка гостиницы №2"/>
+            <img src="img/Layer_2.jpg" alt="картинка гостиницы №2"/>
             </a>
             <p> мотель от 3000р</p>
-            <button type="button">подробнее</button>
-            <button type="button">забронировать</button>
-            <p>рейтинг: 8.9</p>
+            <button class="button" type="button">подробнее</button>
+            <button  class="button_1" type="button">забронировать</button>
+            <p class="rating">рейтинг: 8.9</p>
          </section>
          <section>
-            <h2>Villas at poco diablo</h2>
+            <h2 class="name_hotel">Villas at poco diablo</h2>
             <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="картинка гостиницы №3"/>
+            <img src="img/Layer_3.jpg" alt="картинка гостиницы №3"/>
             </a>
             <p> апартаменты от 2000р</p>
-            <button type="button">подробнее</button>
-            <button type="button">забронировать</button>
-            <p>рейтинг: 9.2</p>
+            <button  class="button" type="button">подробнее</button>
+            <button  class="button_1" type="button">забронировать</button>
+            <p class="rating">рейтинг: 9.2</p>
          </section>
       </main>
       <footer>
          <section>
-            <h2> Контакты </h2>
+            <h2 class="visually-hidden"> Контакты </h2>
             <p>
                #Visitsedona<br>
                тел:+7(945)666-01-66
             </p>
          </section>
          <section>
-            <h2> Социальные сети </h2>
-            <ul>
+            <h2 class="visually-hidden"> Социальные сети </h2>
+            <ul class="site_navigation">
                <li>
-                  <a href="#">Твитер</a>
+                  <a href="#">
+                     <img src="img\twitter.svg" alt="разработчик"/>
+                     Твитер</a>
+               <li>
+                  <a href="#">
+                     <img src="img\fb-icon.svg" alt="разработчик"/>
+                     Фейсбук</a>
                </li>
                <li>
-                  <a href="#">Фейсбук</a>
-               </li>
-               <li>
-                  <a href="#">Ютуб</a>
+                  <a href="#">
+                     <img src="img\youtube.svg" alt="разработчик"/>
+                     Ютуб</a>
                </li>
             </ul>
          </section>
          <p>
             Website by
             <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="разработчик"/>
+            <img src="img\logo-htmlacademy_3.svg" alt="разработчик"/>
             </a>
          </p>
       </footer>

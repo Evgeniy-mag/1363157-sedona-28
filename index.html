@@ -2,15 +2,18 @@
 <html lang="ru">
    <head>
       <meta charset="UTF-8">
-      <title> CEDONA-hotel</title>
+      <title>HTML Academy: Седона</title>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <link href="normalize.css" rel="stylesheet">
+      <link href="style.css" rel="stylesheet">
    </head>
-   <body>
+   <body class="index">
       <header>
-         <nav>
+         <nav class="navigation">
             <a href="">
             <img src="img\logo.svg" alt="логотип"/>
             </a>
-            <ul>
+            <ul class="site_navigation">
                <li><a href="">Информация</a></li>
                <li><a href=""> Фото и Видео</a></li>
                <li><a href="">Карта штата</a></li>
@@ -19,12 +22,13 @@
          </nav>
       </header>
       <main>
-         <p> Седона - небольшой городок в Аризоне, <br>
+         <img src="img\welcome.svg" alt="Добро пожаловать в Седону">
+         <p class="neadline"> Седона - небольшой городок в Аризоне, <br>
             заслуживающий большего!
          </p>
-         <h2> Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
-         <h2>Заинтересовались?</h2>
-         <p>Укажите предполагаемые даты поездки, <br>
+         <p class="text"> Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+         <h2 class="question">Заинтересовались?</h2>
+         <p class="text">Укажите предполагаемые даты поездки, <br>
             и мы покажем вам лучшее предложения гостиниц в седоне
          </p>
       </main>
@@ -38,28 +42,35 @@
          </section>
          <section>
             <h2 class="visually-hidden"> Социальные сети </h2>
-            <ul>
+            <ul class="site_navigation">
                <li>
-                  <a href="#">Твитер</a>
+                  <a href="#">
+                     <img src="img\twitter.svg" alt="разработчик"/>
+                     Твитер</a>
+               <li>
+                  <a href="#">
+                     <img src="img\fb-icon.svg" alt="разработчик"/>
+                     Фейсбук</a>
                </li>
                <li>
-                  <a href="#">Фейсбук</a>
-               </li>
-               <li>
-                  <a href="#">Ютуб</a>
+                  <a href="#">
+                     <img src="img\youtube.svg" alt="разработчик"/>
+                     Ютуб</a>
                </li>
             </ul>
          </section>
          <p>
             Website by
             <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="разработчик"/>
+            <img src="img\logo-htmlacademy_3.svg" alt="разработчик"/>
             </a>
          </p>
       </footer>
-      <section>
+      <section class="form_hotel">
+         <div class="hotel_header">
          <h2> Поиск гостиницы в Седоне</h2>
-         <Form action="https://echo.htmlacademy.ru" method="get">
+         </div>
+         <Form class="appointment" action="https://echo.htmlacademy.ru" method="get">
             <div>
                <label for="data_arrival">Дата заезда:</label>
                <input id="data_arrival" type="data" name="arrival" placeholder="24 апреля 2017" required>
@@ -80,7 +91,7 @@
                <input id="number_children" type="range" min="1"max="10" step="1" name="children">
             </div>
             <br>
-            <button type="submit">Найти</button>
+            <button  class="button" type="submit">Найти</button>
          </form>
       </section>
    </body>
